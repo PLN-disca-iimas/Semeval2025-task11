@@ -16,12 +16,12 @@ The provided code serves as templates that can be adapted to different languages
 The repository is organized as follows:
 
 SemEval-2025-Task-11/Track_A_CODES/
-├── MODEL_SELECTION.py # Base code for model selection
-├── HYPERPARAMETER_TUNING.py # Base code for hyperparameter tuning
-├── CUSTOM_LOSS_FUNCTIONS_COMBINATION.py # Base code for custom loss functions combination
-├── FINAL_MODEL_TRAINING.py # Base code for final model training
-├── README.md # This file
-└── requirements.txt # Required dependencies to run the code
+MODEL_SELECTION.py # Base code for model selection
+HYPERPARAMETER_TUNING.py # Base code for hyperparameter tuning
+CUSTOM_LOSS_FUNCTIONS_COMBINATION.py # Base code for custom loss functions combination
+FINAL_MODEL_TRAINING.py # Base code for final model training
+README.md 
+requirements.txt # Required dependencies to run the code
 
 
 ---
@@ -88,20 +88,22 @@ To run the code, ensure you have the following dependencies installed:
 
 ```bash
 pip install -r requirements.txt
+```
 
 ---
 
-Results
+## Results
+
 The results obtained in SemEval-2025 Task 11 demonstrate strong performance in low-resource languages, such as Tigrinya (2nd place), Igbo (3rd place), and Oromo (4th place). For more details on the results, refer to the paper.
 
 ---
 
-Contributions
+## Contributions
 This repository was developed by the LATE-GIL-NLP team as part of their participation in SemEval-2025 Task 11. If you would like to contribute or have any questions, feel free to open an issue or submit a pull request.
 
 ---
 
-References
+## References
 
 Paper description: To be published
 
@@ -109,7 +111,7 @@ GitHub task description: https://github.com/emotion-analysis-project/SemEval2025
 
 ---
 
-Cite as:
+## Cite as:
 
 @inproceedings{vázquez-osorio-etal-2025-late-gil-nlp,
   title = "{LATE-GIL-NLP at SemEval-2025 Task 11: Multi-Language Emotion Detection and Intensity Classification Using Transformer Models with Optimized Loss Functions for Imbalanced Data}",

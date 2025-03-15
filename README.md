@@ -14,21 +14,15 @@ The provided code serves as templates that can be adapted to different languages
 ## Repository Structure
 
 The repository is organized as follows:
-
+```bash
 SemEval-2025-Task-11/Track_A_CODES/
-
-  MODEL_SELECTION.py # Base code for model selection
-  
-  HYPERPARAMETER_TUNING.py # Base code for hyperparameter tuning
-  
-  CUSTOM_LOSS_FUNCTIONS_COMBINATION.py # Base code for custom loss functions combination
-  
-  FINAL_MODEL_TRAINING.py # Base code for final model training
-  
-  README.md 
-  
-  requirements.txt # Required dependencies to run the code
-
+  -MODEL_SELECTION.py # Base code for model selection
+  -HYPERPARAMETER_TUNING.py # Base code for hyperparameter tuning
+  -CUSTOM_LOSS_FUNCTIONS_COMBINATION.py # Base code for custom loss functions combination
+  -FINAL_MODEL_TRAINING.py # Base code for final model training
+  -README.md 
+  -requirements.txt # Required dependencies to run the code
+```
 
 ---
 
@@ -118,21 +112,14 @@ GitHub task description: https://github.com/emotion-analysis-project/SemEval2025
 ---
 
 ## Cite as:
-
+```bash
 @inproceedings{vázquez-osorio-etal-2025-late-gil-nlp,
-
   title = "{LATE-GIL-NLP at SemEval-2025 Task 11: Multi-Language Emotion Detection and Intensity Classification Using Transformer Models with Optimized Loss Functions for Imbalanced Data}",
-
   author = "Vázquez-osorio, Jesús and Gómez-adorno, Helena and Sierra, Gerardo and Sierra-casiano, Vladimir and Canchola-hernández, Diana and Tovar-cortés, José and Solís-vilchis, Roberto and Salazar, Gabriel",
-
   booktitle = "Proceedings of the 19th International Workshop on Semantic Evaluation (SemEval-2025)",
-
   month = jul,
-
   year = "2025",
-
   address = "Vienna, Austria",
-
   publisher = "Association for Computational Linguistics"
-
 }
+```

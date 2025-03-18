@@ -15,18 +15,25 @@ The provided code serves as templates that can be adapted to different languages
 
 The repository is organized as follows:
 ```bash
-SemEval-2025-Task-11/Track_A_CODES/
-  -MODEL_SELECTION.py # Base code for model selection
-  -HYPERPARAMETER_TUNING.py # Base code for hyperparameter tuning
-  -CUSTOM_LOSS_FUNCTIONS_COMBINATION.py # Base code for custom loss functions combination
-  -FINAL_MODEL_TRAINING.py # Base code for final model training
-  -README.md 
-  -requirements.txt # Required dependencies to run the code
+SemEval-2025-Task-11/
+├── Track_A_CODES/
+│   ├── MODEL_SELECTION.py  # Base code for model selection
+│   ├── HYPERPARAMETER_TUNING.py  # Base code for hyperparameter tuning
+│   ├── CUSTOM_LOSS_FUNCTIONS_COMBINATION.py  # Base code for custom loss functions combination
+│   ├── FINAL_MODEL_TRAINING.py  # Base code for final model training
+│
+├── Track_B/
+│   ├── Track_b_binary_multilabel_models_training.ipynb  # Notebook for multilabel binary model training
+│   ├── Track_b_3_level_model_custom_loss_function.ipynb  # Notebook for 3 level classification emotion intensity model training
+│   ├── Generate_track_b_predictions.ipynb  # Notebook for generating complete predictions
+│
+├── README.md
+└── requirements.txt  # Required dependencies to run the code
 ```
 
 ---
 
-## Description of Base Code
+## Description of Base Code - Track A
 
 ### 1. **Model Selection** (`MODEL_SELECTION.py`)
 
@@ -82,6 +89,23 @@ This script trains the final model using the best model, optimal hyperparameters
 
 ---
 
+## Description of Base Code - Track B
+
+### Multilabel binary models (multilabel_binary_models_trainig.ipynb)
+This code was used to fine-tune the models to predict whether each emotion is present (1) in
+the given text or not (0).
+
+### Intensity level models (3_level_model_custom_loss_funcion.ipynb)
+This code was used to fine-tune the classification models to predict the level of intensity of an emotion for a given 
+text. 
+The intensity level can be 1,2 or 3. 
+
+### Predictions generation (Generate_track_b_predictions.ipynb)
+This code was used to generate the task predictions. We used a two-step 
+predictions, first we generated the multilabel binary model prediction for the given text, and only 
+if an emotion was detected (1) we then generated the intensity level classification (with the 3 level model trained).
+
+
 ## Requirements
 
 To run the code, ensure you have the following dependencies installed:
@@ -94,7 +118,7 @@ pip install -r requirements.txt
 
 ## Results
 
-The results obtained in SemEval-2025 Task 11 demonstrate strong performance in low-resource languages, such as **Tigrinya (2nd place)**, **Igbo (3rd place)**, and **Oromo (4th place)**. For more details on the results, refer to the paper.
+The results obtained in SemEval-2025 Task 11 demonstrate strong performance in low-resource languages, such as **Tigrinya (2nd place)**, **Igbo (3rd place)**, and **Oromo (4th place)** for track A. For more details on the results, refer to the paper.
 
 ---
 
